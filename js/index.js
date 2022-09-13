@@ -5,9 +5,12 @@
    }
 
    function login() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
      firebase.auth().signInWithEmailAndPassword(
-       form.email().value, form.password().value
+       email, password
      ).then(response => {
+      console.log(response)
        window.location.href = "/index.html";
      }).catch(error => {
        console.log('error', error)

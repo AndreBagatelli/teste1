@@ -192,9 +192,9 @@
 
       .header__nav li{
         list-style-type: none;
-        background: #rgb(49, 55, 124);
+        background: #31377c;
         text-align: center;
-        border-bottom: 1px dotted rgba(255,255,255, 0.2);
+        border-bottom: 1px dotted #ffffff33;
         font-size: 14px;
         font-weight: 600;
 
@@ -262,11 +262,11 @@
       <h1 class="h1">Login</h1>
       <form>
         <label for="email">E-mail</label>
-        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off"/>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="off"/>
         <div class="error">Email Inválido</div>
         <div class="error" id="email-required-error">Email Obrigatório</div>
         <label for="password">Senha</label>
-        <input type="password" name="password" placeholder="Digite sua senha"/>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha"/>
         <div class="error">Senha Inválida</div>
         <div class="error">Senha Obrigatória</div>
         <button type="button" class="btn" id="login-button" onclick="login()">Entrar</button>
