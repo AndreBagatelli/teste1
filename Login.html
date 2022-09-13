@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="author" content="André">
+    <meta name="description" content="lista de TAGS">
+    <meta name="keywords" content="html, tecnologia, webdesign">
+
+
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/normalize.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.min.css">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Oswald:wght@200;300;500&display=swap" rel="stylesheet">
+
+    <link href="../img/favicon3.png" rel="shortcut icon" type="image/x-icon" />
+
+
+    <style>
+
+      body{
+        background-color: #295683;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+
+
+      }
+
+      textarea:focus, input:focus{
+        outline: none;
+
+      }
+
+      a, label{
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+      }
+
+      a:hover{
+        color: #08558b;
+      }
+
+      #login-container{
+        background-color: white;
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 30px;
+        margin-top: 10vh;
+        border-radius: 10px;
+        text-align: center;
+
+
+      }
+
+      form{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        margin-right: 30px;
+
+      }
+
+      label, input{
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+
+      label{
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 10px;
+      }
+
+      input{
+        border-bottom: 2px solid #323232;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      input:focus{
+        border-bottom: 2px solid #08558b;
+      }
+
+      .btn{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        border-radius: 15px;
+        margin-top: 30px;
+        color: white;
+        background-color: #08558b;
+        cursor: pointer;
+        margin-left: 15px;
+        padding: 20px;
+
+      }
+
+
+      input[type="button"]{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 30px;
+        color: white;
+        background-color: #08558b;
+        cursor: pointer;
+        margin-left: 15px;
+      }
+
+      input[type="submit"]:hover{
+        background-color: #1b223c;
+        transition: .5s;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .js .header{
+
+        position: fixed;
+        width: 100%;
+      }
+
+      .js .header__nav{
+        transition: max-height 1s;
+      }
+
+
+
+
+
+
+      /* cabeçalho */
+      .header{
+        background: #e6eef5;
+        width: 100%;
+
+      }
+
+      .header__btnMenu{
+        float: right;
+        margin: 1em;
+        background: transparent;
+        border: none;
+        font-size: 14px;
+
+
+      }
+
+      .header__nav{
+
+
+
+      }
+
+      .header__nav ul{
+        margin: 0;
+        padding: 0;
+      }
+
+      .header__nav li{
+        list-style-type: none;
+        background: #rgb(49, 55, 124);
+        text-align: center;
+        border-bottom: 1px dotted rgba(255,255,255, 0.2);
+        font-size: 14px;
+        font-weight: 600;
+
+      }
+
+      .header__nav a{
+        text-decoration: none;
+        color: #295683;
+        font-family: 'Lato', sans-serif;
+        display: block;
+        padding: 15px 0;
+        padding-left: 50px;
+        transition: .5s ease;
+
+
+      }
+
+      .header__nav a:hover{
+        color: red;
+      }
+
+      .banner{
+        width: 100%;
+      }
+
+      .h1{
+        font-family: 'Aboreto', cursive;
+        color: #295683;
+      }
+
+      .error{
+        color: white;
+        background: red;
+        display: none;
+      }
+
+
+
+    </style>
+
+
+</head>
+
+  <body>
+
+    <img class="banner" src="../img/quem-somos.png" alt="">
+
+    <header class="header">
+      <button class="header__btnMenu" style="display: none;"><i class="fa-solid fa-align-justify fa-2x"></i> <span class="sr-only">Menu</button>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../secundarias/Quem-somos.html">Quem Somos</a></li>
+          <li><a href="../secundarias/Curso.html">Curso</a></li>
+          <li><a href="../secundarias/Convalidação-de-diploma.html">Convalidação de Diploma</a></li>
+          <li><a href="../secundarias/Psicoterapeutas-trinicos-credenciados.html">Psicoterapeutas Trínicos Credenciados</a></li>
+          <li><a href="../secundarias/Terapia-online.html">Terapia Online</a></li>
+          <li><a href="../secundarias/Livros-ebooks.html">Livros/E-books</a></li>
+          <li><a href="../secundarias/Contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="login-container">
+      <h1 class="h1">Login</h1>
+      <form>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off"/>
+        <div class="error">Email Inválido</div>
+        <div class="error" id="email-required-error">Email Obrigatório</div>
+        <label for="password">Senha</label>
+        <input type="password" name="password" placeholder="Digite sua senha"/>
+        <div class="error">Senha Inválida</div>
+        <div class="error">Senha Obrigatória</div>
+        <button type="button" class="btn" id="login-button" onclick="login()">Entrar</button>
+      </form>
+
+
+
+
+
+    </div>
+
+  </body>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-auth-compat.js"></script>
+    <script>
+    const firebaseConfig = {
+          apiKey: "AIzaSyAfVQmZHjackadr36QeUuXGoDCE12rRthY",
+          authDomain: "login-7ba66.firebaseapp.com",
+          projectId: "login-7ba66",
+          storageBucket: "login-7ba66.appspot.com",
+          messagingSenderId: "60367460532",
+          appId: "1:60367460532:web:75192848133ccca5141fe1"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        console.log('antes');
+        firebase.auth().signInWithEmailAndPassword("andremeinerz@hotmail.com", "123456").then(response => {
+          console.log('success', response)
+        }).catch(error => {
+          console.log('error', error)
+        });
+        console.log('depois')
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-auth-compat.js"></script>
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyAfVQmZHjackadr36QeUuXGoDCE12rRthY",
+        authDomain: "login-7ba66.firebaseapp.com",
+        projectId: "login-7ba66",
+        storageBucket: "login-7ba66.appspot.com",
+        messagingSenderId: "60367460532",
+        appId: "1:60367460532:web:75192848133ccca5141fe1"
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      console.log('antes');
+      firebase.auth().signInWithEmailAndPassword("andremeinerz@hotmail.com", "123456").then(response => {
+        console.log('success', response)
+      }).catch(error => {
+        console.log('error', error)
+      });
+      console.log('depois')
+
+
+    </script>
+-->
+
+
+
+
+
+
+
+
+
+
+</html>
